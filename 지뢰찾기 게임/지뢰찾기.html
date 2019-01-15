@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>지뢰 찾기 게임</title>
+    <style>
+        table {
+            width: 300px;
+            height: 300px;
+            table-layout: fixed;
+            max-height: 400px;
+            max-width: 400px;
+            margin-right: 100px;
+            margin-left: 350px;
+        }
+
+        td {
+            height: 57.6px;
+            word-break: break-all;
+            background-color: gray;
+        }
+
+        button {
+            background-color: black;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+<div style="float: left">
+    <table>
+        <tr>
+            <td onclick="touch(this);" num="1"></td>
+            <td onclick="touch(this);" num="2"></td>
+            <td onclick="touch(this);" num="3"></td>
+            <td onclick="touch(this);" num="4"></td>
+            <td onclick="touch(this);" num="5"></td>
+        </tr>
+        <tr>
+            <td onclick="touch(this);" num="6"></td>
+            <td onclick="touch(this);" num="7"></td>
+            <td onclick="touch(this);" num="8"></td>
+            <td onclick="touch(this);" num="9"></td>
+            <td onclick="touch(this);" num="10"></td>
+        </tr>
+        <tr>
+            <td onclick="touch(this);" num="11"></td>
+            <td onclick="touch(this);" num="12"></td>
+            <td onclick="touch(this);" num="13"></td>
+            <td onclick="touch(this);" num="14"></td>
+            <td onclick="touch(this);" num="15"></td>
+        </tr>
+        <tr>
+            <td onclick="touch(this);" num="16"></td>
+            <td onclick="touch(this);" num="17"></td>
+            <td onclick="touch(this);" num="18"></td>
+            <td onclick="touch(this);" num="19"></td>
+            <td onclick="touch(this);" num="20"></td>
+        </tr>
+        <tr>
+            <td onclick="touch(this);" num="21"></td>
+            <td onclick="touch(this);" num="22"></td>
+            <td onclick="touch(this);" num="23"></td>
+            <td onclick="touch(this);" num="24"></td>
+            <td onclick="touch(this);" num="25"></td>
+        </tr>
+    </table>
+</div>
+<div>
+    <p>현재 YAM : </p>
+    <form id="bet">배팅금 입력 : <input id="text"><button id="start">게임 시작!</button></form>
+    폭탄 갯수 : <button>1</button><button>3</button><button>5</button><button>24</button>
+    <div id="accurate"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/random-js/1.0.8/random.min.js"></script>
+<script src="bomb.js"></script>
+</body>
+</html>
