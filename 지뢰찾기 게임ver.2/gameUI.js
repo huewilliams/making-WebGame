@@ -42,7 +42,6 @@ function gameStart() {
 
 // 타일에 폭탄 갯수만큼 생성
 function calc(num) {
-    let arr = [];
     for(let i=1; i<26; i++)
     {
         let element = document.getElementById(i);

@@ -58,6 +58,7 @@ let time = 0; // 횟수
 let value; // next 값
 let remain =0; // stake 값
 let cash  = 1;
+let arr = []; // 선택된 폭탄 인덱스
 
 // 배팅 금액 입력 또는 게임시작 시
 form.addEventListener('submit', (event)=>{
@@ -70,6 +71,8 @@ form.addEventListener('submit', (event)=>{
         event.preventDefault();
         if(cash)
         {
+            arr = [];
+            booms = [];
             while(table.firstChild) {
                 table.removeChild(table.firstChild);
             }
